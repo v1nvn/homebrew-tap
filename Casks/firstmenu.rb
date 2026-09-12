@@ -1,9 +1,5 @@
 cask "firstmenu" do
-  # Stub: finalized by the first Developer-ID-signed + notarized release.
-  # firstmenu/.github/workflows/release.yml runs `brew bump-cask-pr --version <v>`
-  # on each release, which downloads the url below, recomputes the sha256, and
-  # rewrites both `version` and `sha256`.
-  version "1.0.0"
+  version "0.0.0"
   sha256 :no_check
 
   url "https://github.com/v1nvn/firstmenu/releases/download/v#{version}/firstmenu-#{version}.zip"
@@ -11,7 +7,11 @@ cask "firstmenu" do
   desc "Scriptable macOS menu-bar app for plugins and system metrics"
   homepage "https://github.com/v1nvn/firstmenu"
 
-  # TODO: add `depends_on macos: ">= :<min>"` once MACOSX_DEPLOYMENT_TARGET is confirmed.
+  depends_on macos: :tahoe
+
+  postflight_steps do
+    run "/usr/bin/xattr", args: ["-d", "com.apple.quarantine", "{{appdir}}/firstmenu.app"], must_succeed: false
+  end
 
   app "firstmenu.app"
 
