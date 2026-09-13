@@ -21,9 +21,8 @@ brew install --cask v1nvn/tap/firstmenu
 
 | Cask | App | Description |
 | --- | --- | --- |
-| [`firstmenu`](./Casks/firstmenu.rb) | [FirstMenu](https://github.com/v1nvn/firstmenu) | Scriptable macOS menu-bar app for plugins and system metrics |
+| [`firstmenu`](./Casks/firstmenu.rb) | [FirstMenu](https://github.com/v1nvn/homebrew-tap/releases) | Scriptable macOS menu-bar app for plugins and system metrics |
 
 ## Updates
 
-Each app's release pipeline bumps its own cask here via `brew bump-cask-pr`, so
-versions stay current automatically.
+Each app's release pipeline publishes its zip to this tap's [releases](https://github.com/v1nvn/homebrew-tap/releases) and bumps its cask here via `brew bump-cask-pr`, so versions stay current automatically. FirstMenu is closed-source; the tap's releases are its distribution channel.
