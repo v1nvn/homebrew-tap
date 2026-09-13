@@ -8,6 +8,7 @@ cask under `Casks/`.
 
 ```bash
 brew tap v1nvn/tap
+brew trust v1nvn/tap    # only newer Homebrew asks for this, once per tap
 brew install --cask firstmenu
 ```
 
@@ -21,7 +22,7 @@ brew install --cask v1nvn/tap/firstmenu
 
 | Cask | App | Description |
 | --- | --- | --- |
-| [`firstmenu`](./Casks/firstmenu.rb) | [FirstMenu](https://github.com/v1nvn/homebrew-tap/releases) | Scriptable macOS menu-bar app for plugins and system metrics |
+| [`firstmenu`](./Casks/firstmenu.rb) | [FirstMenu](https://github.com/v1nvn/homebrew-tap/releases) | Scriptable menu-bar app for plugins and system metrics |
 
 ## Updates
 

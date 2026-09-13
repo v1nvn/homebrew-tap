@@ -4,7 +4,7 @@ cask "firstmenu" do
 
   url "https://github.com/v1nvn/homebrew-tap/releases/download/firstmenu-v#{version}/firstmenu-#{version}.zip"
   name "FirstMenu"
-  desc "Scriptable macOS menu-bar app for plugins and system metrics"
+  desc "Scriptable menu-bar app for plugins and system metrics"
   homepage "https://github.com/v1nvn/homebrew-tap"
 
   depends_on macos: :tahoe
