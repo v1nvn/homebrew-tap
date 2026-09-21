@@ -1,6 +1,6 @@
 cask "firstmenu" do
-  version "0.3.0"
-  sha256 "3bc5f80259e1a127c66900f6e25435c66eb8bb4b9c0f38d8d165e0cba6e20228"
+  version "0.3.1"
+  sha256 "22a65a46ba57598e1d9489a6674233c18c3f2dc75bf4c1e24d7e4f38eacaa544"
 
   url "https://github.com/v1nvn/homebrew-tap/releases/download/firstmenu-v#{version}/firstmenu-#{version}.zip"
   name "FirstMenu"
